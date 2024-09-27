@@ -1,39 +1,26 @@
-# star-ships
+Галактической республике необходима твоя помощь. Нужно создать интерфейс для взаимодействия с галактической базой.
 
-This template should help get you started developing with Vue 3 in Vite.
+Всего необходимо реализовать 2 страницы. Список космических кораблей и страница корабля.
 
-## Recommended IDE Setup
+Страница со списком кораблей:
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- На странице будет список всех кораблей
+- Добавить текстовое поле для поиска по названию корабля. Учесть возможность передачи результатов поиска по ссылке.
+- Реализовать пагинацию в формате next - prev
+- При клике по элементу списка, пользователь переходит на страницу с информацией по конкретному кораблю.
 
-## Type Support for `.vue` Imports in TS
+Страница корабля:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+- Необходимо вывести всю информацию о корабле
 
-## Customize configuration
+API [https://swapi.dev/documentation](https://swapi.dev/documentation)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Endpoints
 
-## Project Setup
+- /starships/ -- get all the starship resources
+- /starships/:id/ -- get a specific starship resource
+- /starships/schema/ -- view the JSON schema for this resource
 
-```sh
-npm install
-```
+Итоговая работа должна быть в формате ссылки на репозиторий.
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Для реализации использовать VUEJS
